@@ -1,1 +1,1 @@
-# react-native-instagram
+# React Native Instagram Clone
