@@ -1,1 +1,1 @@
-# React Native Instagram UI Clone
+# React Native Instagram Clone
