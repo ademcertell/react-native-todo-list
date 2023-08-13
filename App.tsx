@@ -102,9 +102,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  addText: {
-    
-  },
+  addText: {},
 });
 
 export default App;
