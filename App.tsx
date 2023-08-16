@@ -10,6 +10,7 @@ import {
 } from "react-native";
 
 import Task from "./components/Task";
+import DateView from "./components/Date";
 
 const App: React.FC = () => {
   const [task, setTask] = useState<string>("");
@@ -31,7 +32,10 @@ const App: React.FC = () => {
   return (
     <View style={styles.container}>
       <View style={styles.taskWrapper}>
-        <Text style={styles.title}>ToDo Lists</Text>
+        <View style={styles.dateTitle}>
+          <Text style={styles.title}>ToDo Lists</Text>
+          <DateView />
+        </View>
         <View style={styles.content}>
           {taskItems.map((item, index) => (
             <TouchableOpacity key={index} onPress={() => completedTask(index)}>
@@ -86,6 +90,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    paddingHorizontal: 20,
   },
   input: {
     backgroundColor: "#d9d9d9",
@@ -93,6 +98,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     borderRadius: 15,
     width: 268,
+    height: 50,
   },
   addWrapper: {
     width: 60,
@@ -102,7 +108,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  addText: {},
+  addText: {
+    fontSize: 30,
+    fontWeight: "bold",
+  },
+  dateTitle: {
+    flexDirection: "row",
+    justifyContent: "space-between", 
+    alignItems: "center",
+  }
 });
 
 export default App;

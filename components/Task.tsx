@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.3,
     shadowRadius: 4.65,
-
     elevation: 8,
   },
   itemCheck: {
@@ -52,6 +51,7 @@ const styles = StyleSheet.create({
   },
   itemText: {
     maxWidth: "100%",
+    fontSize: 16,
   },
   circular: {
     width: 15,
